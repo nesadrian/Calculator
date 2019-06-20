@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div id="numberDisplay">
+            
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="addToCalculation('1')">1</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('2')">2</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('3')">3</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('+')">
+                        +
+                    </button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('%')">
+                        %
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="addToCalculation('4')">4</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('5')">5</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('6')">6</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('-')">
+                        -
+                    </button>
+                </td>
+                <td>
+                    <button onclick="clearLast()">
+                        C
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="addToCalculation('7')">7</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('8')">8</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('9')">9</button>
+                </td>
+                <td>
+                    <button onclick="addToCalculation('*')">
+                        *
+                    </button>
+                </td>
+                <td>
+                    <button onclick="clearAll()">
+                        AC
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <button onclick="addToCalculation('0')">0</button>
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <button onclick="addToCalculation('/')">
+                        /
+                    </button>
+                </td>
+                <td>
+                    <button onclick="calculateSum()">
+                        =
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="calculator.js"></script>
+    </body>
+</html>
