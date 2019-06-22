@@ -6,7 +6,7 @@ function clearAll() {
     while(calculation.length > 0) {
         calculation.pop();
     }
-    updateNumDisplay()
+    numberDisplay.innerHTML = 0;
 }
 
 function clearLast() {
@@ -16,7 +16,7 @@ function clearLast() {
 
 function addToCalculation(calcInput) {
     calculation.push(calcInput);
-    updateNumDisplay()
+    updateNumDisplay();
 }
 
 function calculateSum() {
