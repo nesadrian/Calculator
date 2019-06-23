@@ -4,8 +4,11 @@
     display: block;
     top: 10px;
     left: 10px;
-    height: 400px;
-    width: 320px;
+    height: 390px;
+    width: 330px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #1c1c1c;
 }
 
 #numberDisplay {
@@ -14,13 +17,21 @@
     color: #fcfcfc;
     text-align: right;
     margin: 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#buttonsTable {
+    width: 100%;
 }
 
 .title {
     text-align: center;
     color: #fcfcfc;
     font-size: 50px;
-    margin: 10px;
+    margin: 0px;
+    background-color: #1c1c1c;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .numButton {

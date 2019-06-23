@@ -6,23 +6,30 @@ function clearAll() {
     while(calculation.length > 0) {
         calculation.pop();
     }
-    numberDisplay.innerHTML = 0;
+    updateNumDisplay(0);
 }
 
 function clearLast() {
     calculation.pop();
-    updateNumDisplay()
+    if(calculation.length == 0) {
+        updateNumDisplay(0);
+    }
+    else {
+        updateNumDisplay(calculation.join(""));
+    }
 }
 
 function addToCalculation(calcInput) {
     calculation.push(calcInput);
-    updateNumDisplay();
+    updateNumDisplay(calculation.join(""));
 }
 
 function calculateSum() {
-    numberDisplay.innerHTML = sum;
+    //eval() as a way to calculate should be replaced
+    updateNumDisplay(sum);
+    sum = eval(calculation.join(''));
 }
 
-function updateNumDisplay() {
-    numberDisplay.innerHTML = calculation.join("");
+function updateNumDisplay(information) {
+    numberDisplay.innerHTML = information;
 }
