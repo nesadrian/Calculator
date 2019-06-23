@@ -26,8 +26,9 @@ function addToCalculation(calcInput) {
 
 function calculateSum() {
     //eval() as a way to calculate should be replaced
-    updateNumDisplay(sum);
     sum = eval(calculation.join(''));
+    clearAll();
+    addToCalculation(sum);
 }
 
 function updateNumDisplay(information) {
